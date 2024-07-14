@@ -37,6 +37,10 @@ html {
     background-color: var(--btn-hover-bg-color);
 }
 
+section {
+    margin: 10rem 0;
+}
+
 /* header and nav related styles */
 header {
     padding: 8rem 12rem;
@@ -129,6 +133,23 @@ nav .nav-icon {
     z-index: -1;
 }
 
+/* main part styles */
+main {
+    width: 83%;
+    margin: 0 auto;
+}
+
+/* company logo section styles here */
+.company-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.company-logos .logo img {
+    width: 100%;
+}
+
 /* Responsive media queries */
 /* Mobile devices */
 @media screen and (max-width: 576px) {
@@ -177,6 +198,19 @@ nav .nav-icon {
     .banner-image img:last-child {
         width: 100%;
     }
+
+    section {
+        margin: 4rem;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .company-logos {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 }
 
 /* Medium Devices */
@@ -220,5 +254,18 @@ nav .nav-icon {
 
     .banner-image img:last-child {
         width: 100%;
+    }
+
+    section {
+        margin: 4rem;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .company-logos {
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 }
