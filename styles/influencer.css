@@ -65,7 +65,7 @@ nav li a {
     font-weight: 600;
 }
 
-nav .nav-icon{
+nav .nav-icon {
     display: flex;
 }
 
@@ -103,20 +103,24 @@ nav .nav-icon{
     font-weight: 600;
     margin-bottom: 1.6rem;
 }
-.banner-content .btn-primary{
+
+.banner-content .btn-primary {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0.8rem;
 }
-.banner-image{
+
+.banner-image {
     position: relative;
     margin-top: 4rem;
 }
+
 .banner-image img:first-child {
     width: 40rem;
     margin-left: 3rem
 }
+
 .banner-image img:last-child {
     width: 47rem;
     position: absolute;
@@ -127,11 +131,12 @@ nav .nav-icon{
 
 /* Responsive media queries */
 /* Mobile devices */
-@media screen and (max-width: 576px){
-    header{
+@media screen and (max-width: 576px) {
+    header {
         padding: 3.5rem 1.6rem;
     }
-    nav{
+
+    nav {
         flex-direction: column;
         gap: 2rem;
     }
@@ -142,28 +147,78 @@ nav .nav-icon{
         align-items: center;
         row-gap: 1rem;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
         /* gap: 7rem; */
     }
+
     .banner-content,
     .banner-image {
         width: 90%;
         text-align: center;
     }
-    .banner-content{
+
+    .banner-content {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .banner-content .banner-title{
+
+    .banner-content .banner-title {
         font-size: 2.8rem;
         line-height: normal;
     }
-    .banner-image img:first-child{
+
+    .banner-image img:first-child {
         width: 80%;
     }
-    .banner-image img:last-child{
+
+    .banner-image img:last-child {
+        width: 100%;
+    }
+}
+
+/* Medium Devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    header {
+        padding: 3.5rem 1.6rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    nav>ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content,
+    .banner-image {
+        width: 90%;
+        text-align: center;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .banner-image img:first-child {
+        width: 80%;
+    }
+
+    .banner-image img:last-child {
         width: 100%;
     }
 }
