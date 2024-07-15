@@ -256,7 +256,6 @@ main {
     color: var(--dark-blue-color);
     font-size: 3.8rem;
     font-weight: 700;
-    line-height: 6rem;
     margin-bottom: 1.6rem;
 }
 
@@ -268,13 +267,13 @@ main {
     margin-bottom: 1.6rem;
 }
 
-.featured-content .btn-primary{
+.featured-content .btn-primary {
     border-radius: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0.8rem;
-    
+
 }
 
 /* Responsive media queries */
@@ -296,7 +295,8 @@ main {
         row-gap: 1rem;
     }
 
-    .banner {
+    .banner,
+    .featured-container {
         flex-direction: column-reverse;
         /* gap: 7rem; */
     }
@@ -342,6 +342,22 @@ main {
     .collection-cards {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .featured-image,
+    .featured-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .featured-content h2 {
+        font-size: 2.4rem;
+    }
+
+    .btn-primary-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
 }
 
 /* Medium Devices */
@@ -362,7 +378,8 @@ main {
         row-gap: 1rem;
     }
 
-    .banner {
+    .banner,
+    .featured-container {
         flex-direction: column-reverse;
     }
 
@@ -402,5 +419,17 @@ main {
 
     .collection-cards {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-image,
+    .featured-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-primary-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
     }
 }
