@@ -7,6 +7,8 @@
     --primary-btn-bg-color: #E02C6D;
     --white-color: #fff;
     --btn-hover-bg-color: #d12564;
+    --dark-blue-color: #0A0826;
+    --gray-color: #6C6C6C;
 }
 
 * {
@@ -220,6 +222,59 @@ main {
     font-weight: 500;
     line-height: 143%;
     letter-spacing: 0.252px;
+}
+
+.see-more-btn {
+    text-align: end;
+    margin-top: 5rem;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Featured section styles */
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-image {
+    width: 40%;
+}
+
+.featured-content {
+    width: 55%;
+}
+
+.featured-image img {
+    width: 100%;
+}
+
+.featured-content h2 {
+    color: var(--dark-blue-color);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    margin-bottom: 1.6rem;
+}
+
+.featured-content p {
+    color: var(--gray-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.featured-content .btn-primary{
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    
 }
 
 /* Responsive media queries */
